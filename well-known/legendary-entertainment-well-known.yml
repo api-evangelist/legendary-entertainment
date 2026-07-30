@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes of the legendary.com web host
+host: https://www.legendary.com
+notes: >-
+  Legendary Entertainment publishes no /.well-known/ discovery surface. No
+  developer, api, or docs subdomain resolves (developer.legendary.com,
+  api.legendary.com, docs.legendary.com all fail DNS resolution), so the
+  public web host is the only base host available to probe. All probes
+  recorded below for auditability; absence is a valid result.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+other_probes:
+- path: /robots.txt
+  status: 200
+  notes: 'User-agent: * / Allow: / — no AI-crawler directives (no GPTBot, ClaudeBot, CCBot, or Google-Extended rules)'
+- path: /llms.txt
+  status: 200
+  notes: present and captured verbatim at llms/legendary-entertainment-llms.txt
+- path: /sitemap.xml
+  status: 200
+- path: /feed/
+  status: 200
+  notes: RSS 2.0 (application/rss+xml)
+hosts_unresolved:
+- host: developer.legendary.com
+  status: dns_failure
+- host: api.legendary.com
+  status: dns_failure
+- host: docs.legendary.com
+  status: dns_failure
