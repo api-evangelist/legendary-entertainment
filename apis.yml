@@ -1,21 +1,49 @@
 aid: legendary-entertainment
 name: Legendary Entertainment
-description: 'Legendary Entertainment is a company surfaced as a portfolio company of idg-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Legendary Entertainment is a Burbank, California based global media company
+  that owns, produces, and delivers content to worldwide audiences through three divisions:
+  Legendary Pictures (film), Legendary Television and Digital Media (television and digital
+  content), and Legendary Comics. The company builds and licenses media properties aimed at
+  the fandom demographic, with productions that have generated over $20 billion in worldwide
+  box office, including the Dune, Godzilla and Kong Monsterverse, Pokemon Detective Pikachu,
+  Minecraft, and Street Fighter franchises, plus the Monarch: Legacy of Monsters series.
+  Legendary was surfaced in the API Evangelist network as a portfolio company of IDG Capital.
+  It operates no public developer program: no developer portal, API documentation, or API
+  reference is published, and developer.legendary.com, api.legendary.com, and
+  docs.legendary.com do not resolve. Its only machine-readable public surfaces are an
+  llms.txt link index, an RSS news feed, and an XML sitemap on the marketing site.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.legendary.com/wp-content/uploads/2015/06/home-social1.jpg
 url: https://raw.githubusercontent.com/api-evangelist/legendary-entertainment/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - idg-capital
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-program
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Entertainment
+- Media
+- Film
+- Television
+- Comics
+- Content
+- Studios
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +52,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://legendary.com/
+  url: https://www.legendary.com/
+- type: About
+  url: https://www.legendary.com/about/
+- type: Blog
+  url: https://www.legendary.com/latest-news
+- type: BlogRSS
+  url: https://www.legendary.com/feed/
+- type: TermsOfService
+  url: https://www.legendary.com/about/terms/
+- type: PrivacyPolicy
+  url: https://www.legendary.com/about/privacy/
+- type: Careers
+  url: https://recruiting.paylocity.com/recruiting/jobs/All/07c8d9de-9e8b-43d7-a4ac-acfdf615588a/Legendary-Entertainment
+- type: Twitter
+  url: https://twitter.com/Legendary
+- type: YouTube
+  url: http://www.youtube.com/legendarychannel
+- type: LLMsTxt
+  url: llms/legendary-entertainment-llms.txt
+- type: DomainSecurity
+  url: security/legendary-entertainment-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
