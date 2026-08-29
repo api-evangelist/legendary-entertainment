@@ -12,6 +12,17 @@ description: 'Legendary Entertainment is a Burbank, California based global medi
   reference is published, and developer.legendary.com, api.legendary.com, and
   docs.legendary.com do not resolve. Its only machine-readable public surfaces are an
   llms.txt link index, an RSS news feed, and an XML sitemap on the marketing site.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
